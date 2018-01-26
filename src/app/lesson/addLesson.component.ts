@@ -22,8 +22,8 @@ export class addLessonComponent {
     ngOnInit(){
      }
      
-     listAllLessons(){
-       //this.lessons =  this.lessonService.postLessons(this.lesson);
+     addNewLesson(name, descrition, details){
+          this.lessonService.postLessons(name, descrition, details);
      }
 
 }

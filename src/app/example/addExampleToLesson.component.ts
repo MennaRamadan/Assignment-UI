@@ -27,15 +27,19 @@ export class addExampleToLessonComponent {
      }
      
     listAllLessons(){
-      // this.lessons =  this.lessonService.getLessons();
+        this.lessonService.getLessons().subscribe(data =>{
+            this.lessons = data
+        });
      }
      
      listAllExamples(){
-        //this.exaps = this.ExampleService.getExamples();
+         this.exampleService.getExamples().subscribe(data =>{
+            this.exaps = data
+        });
      }
      
-     addExampleToLesson(){
-        //this.ExampleService.addExampleToLesson(examplId,lessonId);
+     addExampleToLesson(exampleId, lessonId){
+        this.exampleService.addExampleToLesson(exampleId,lessonId);
      }
 }
 

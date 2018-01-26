@@ -26,7 +26,9 @@ export class exampleComponent {
 
 
       getExampleByLesson(exampleId){
-        //this.exap = this.exampleService.getExampleByLesson(exampleId);
+        this.exampleService.getExampleByLesson(exampleId).subscribe(data =>{
+            this.exap =  = data
+        });
      }
 }
 

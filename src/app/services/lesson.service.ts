@@ -14,12 +14,12 @@ export class LessonService{
         
         
         postLessons(_lesson){
-           // return this.http.post('http://127.0.0.1:3000/lesson').map((response:Response) => response.json());
+            return this.http.post('http://127.0.0.1:3000/lesson').map((response:Response) => response.json());
         };
         
         
         addLessonToLanguage(){
-         // return this.http.put('http://127.0.0.1:3000/language/lesson/add').map((response:Response) => response.json());
+          return this.http.put('http://127.0.0.1:3000/language/lesson/add').map((response:Response) => response.json());
         };
         
         getLessonByLanguage(lessonId){

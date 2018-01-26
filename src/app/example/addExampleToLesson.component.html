@@ -1,15 +1,15 @@
-<!-- <h1>Add Example to specific Lesson </h1>
+<h1>Add Example to specific Lesson </h1>
 <div>
-    <select [(ngModel)]="lessonSelectedValue">
+    <select>
       <option *ngFor="let lesson of lessons" [ngValue]="lesson">{{lesson.name}}</option>
     </select>
 </div>
 <div>
-    <select [(ngModel)]="exampleSelectedValue">
+    <select>
       <option *ngFor="let example of exaps" [ngValue]="example">{{example.name}}</option>
     </select>
 </div>
 
 <div>
     <button (click)="addExampleToLesson(lesson._id,example._id)" class="btn btn-primary">Update Lesson with Example</button>
-</div> -->
+</div>

@@ -1,0 +1,15 @@
+<h1>Add Lesson to specific Language </h1>
+<div>
+    <select>
+      <option *ngFor="let lang of languages" [ngValue]="lang">{{lang.name}}</option>
+    </select>
+</div>
+<div>
+    <select >
+      <option *ngFor="let lesson of lessons" [ngValue]="lesson">{{lesson.name}}</option>
+    </select>
+</div>
+
+<div>
+    <button (click)="addExampleToLesson(lang._id,lesson._id)" class="btn btn-primary">Update Language with Lesson</button>
+</div>

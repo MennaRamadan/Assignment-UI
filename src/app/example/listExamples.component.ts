@@ -25,7 +25,9 @@ export class listExampleComponent {
      }
      
      listAllExamples(){
-        //this.exaps = this.getExamples.getLessons();
+         this.getExamples.getLessons().subscribe(data =>{
+            this.exaps  = data
+        });
      }
 
 }

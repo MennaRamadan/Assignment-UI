@@ -17,6 +17,6 @@ export class LangugesService{
         
         
         postLanguage(lang){
-            //return this.http.post('http://127.0.0.1:3000/language').map((response:Response) => response.json());
+            return this.http.post('http://127.0.0.1:3000/language').map((response:Response) => response.json());
         };
 }

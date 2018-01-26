@@ -16,6 +16,7 @@ export class loginComponent {
 
 
     token: any;
+    public key: string = "secure_key";
     
     constructor (private loginService : LoginService){}
    
@@ -28,6 +29,7 @@ export class loginComponent {
                 debugger;
             this.token = data
         });
+        localStorage.setItem(this.key, JSON.stringify(this.token));
      }
 
 }

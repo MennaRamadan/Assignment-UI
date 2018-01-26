@@ -26,15 +26,19 @@ export class addLessonToLangComponent {
      }
      
      listAllLessons(){
-       //this.lessons =  this.lessonService.getLessons();
+         this.lessonService.getLessons().subscribe(data =>{
+            this.lessons = data
+        });
      }
      
      listAllLanguages(){
-        //this.languages = this.langugesService.getLanguages();
+        this.langugesService.getLanguages().subscribe(data =>{
+            this.languages = data
+        });
      }
      
-     addLessonToLang(){
-        //this.lessonService.addLessonToLanguage(lessonId, languageId);
+     addLessonToLang(lessonId, languageId){
+        this.lessonService.addLessonToLanguage(lessonId, languageId);
      }
 
 }

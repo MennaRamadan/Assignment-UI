@@ -14,12 +14,12 @@ export class ExampleService{
         
         
         postExample(_example){
-           // return this.http.post('http://127.0.0.1:3000/example').map((response:Response) => response.json());
+            return this.http.post('http://127.0.0.1:3000/example').map((response:Response) => response.json());
         };
         
         
         addExampleToLesson(){
-         // return this.http.put('http://127.0.0.1:3000/lesson/example/add').map((response:Response) => response.json());
+          return this.http.put('http://127.0.0.1:3000/lesson/example/add').map((response:Response) => response.json());
         };
         
         getExampleByLesson(exampleId){

@@ -29,7 +29,7 @@ export class addLanguageComponent {
         this.lang.name = name;
         this.lang.title = title;
         this.lang.introduction = introduction;
-        //this.languageService.postLanguage(this.lang);
+        this.languageService.postLanguage(this.lang);
      }
 
 }

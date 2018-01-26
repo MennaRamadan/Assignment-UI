@@ -24,7 +24,9 @@ export class listLessonComponent {
      }
      
      listAllLessons(){
-        //this.lessons = this.lessonService.getLessons();
+         this.lessonService.getLessons().subscribe(data =>{
+            this.lessons = data
+        });
      }
 
 }
