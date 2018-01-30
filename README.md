@@ -2,9 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+## Prerequisites
+    things you need to install the software and how to install them
+        -install node.js
+            1. download .exe file and install it
+            2. edit path of system variable to include node
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Or use 'ng start' which will run also 'ng serve'
 
 ## Code scaffolding
 
