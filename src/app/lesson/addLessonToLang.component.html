@@ -1,12 +1,12 @@
 <h1>Add Lesson to specific Language </h1>
 <div>
     <select>
-      <option *ngFor="let lang of languages" [ngValue]="lang">{{lang.name}}</option>
+      <option *ngFor="let lang of languages">{{lang.name}}</option>
     </select>
 </div>
 <div>
-    <select >
-      <option *ngFor="let lesson of lessons" [ngValue]="lesson">{{lesson.name}}</option>
+    <select>
+      <option *ngFor="let lesson of lessons">{{lesson.name}}</option>
     </select>
 </div>
 

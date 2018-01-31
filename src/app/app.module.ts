@@ -21,9 +21,15 @@ import {LangugesService} from './services/languages.service';
 import {LessonService} from './services/lesson.service';
 import {LoginService} from './services/login.service';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule , Routes } from '@angular/router';
 
-
+const appRoutes : Routes = [
+  { path: 'login', component:loginComponent },
+  { path: 'language' , component:languageComponent },
+  { path: '' ,redirectTo: '/login', pathMatch:'full' },
+  { path: '**' ,redirectTo: '/login', pathMatch:'full' }
+  
+];
 
 @NgModule({
   declarations: [
@@ -42,9 +48,10 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule,
-     HttpModule,
-    AppRoutingModule
+    // RouterModule,
+    HttpModule,
+    // AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [ExampleService,LangugesService,LessonService,LoginService],
   bootstrap: [AppComponent]
