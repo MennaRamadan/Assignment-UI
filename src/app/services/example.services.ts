@@ -18,7 +18,7 @@ export class ExampleService{
         };
         
         
-        addExampleToLesson(){
+        addExampleToLesson(exampleId, lessonId){
           return this.http.put('http://127.0.0.1:3000/lesson/example/add').map((response:Response) => response.json());
         };
         

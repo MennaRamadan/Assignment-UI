@@ -11,7 +11,7 @@ describe('addExampleComponent', () => {
   }));
 
 
-  it('should contain add new example',
+  it('should contain addNewExample',
       inject([addExampleComponent], (service: addExampleComponent) => {
          expect(service.addNewExample).toBeTruthy(); 
       }
