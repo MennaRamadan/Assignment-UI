@@ -1,5 +1,8 @@
+<h3>Lessons List</h3>
 <div *ngFor= "let lesson of lessons">
-            <h3 >{{lesson.name}}</h3>
-            <div >{{lesson.description}}</div>
-            <div>{{lesson.details}}</div>
+            <h5>{{lesson.name}}</h5>
+            <ul>
+              <li >{{lesson.description}}</li>
+              <li>{{lesson.details}}</li>
+            </ul>
 </div>
