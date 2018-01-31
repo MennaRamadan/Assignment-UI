@@ -26,10 +26,9 @@ export class addLanguageComponent {
      
      
      addNewLanguage(name, title, introduction){
-        this.lang.name = name;
-        this.lang.title = title;
-        this.lang.introduction = introduction;
-        this.languageService.postLanguage(this.lang);
+        this.languageService.postLanguage(name, title, introduction).subscribe(data =>{
+            console.log(data);
+        });
      }
 
 }

@@ -23,7 +23,6 @@ export class languageComponent {
    
      ngOnInit(){
          this.languageService.getLanguages().subscribe(data =>{
-             debugger;
             this.langs = data
         });
      }

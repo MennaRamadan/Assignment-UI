@@ -12,3 +12,5 @@ export class LoginService{
            return this.http.get('http://127.0.0.1:3000/language').map(res =>res.json());
         };
 }
+
+

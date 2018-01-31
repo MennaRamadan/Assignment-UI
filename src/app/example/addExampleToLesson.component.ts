@@ -39,7 +39,9 @@ export class addExampleToLessonComponent {
      }
      
      addExampleToLesson(exampleId, lessonId){
-        this.exampleService.addExampleToLesson(exampleId,lessonId);
+        this.exampleService.addExampleToLesson(exampleId,lessonId).subscribe(data =>{
+            console.log(data);
+        });
      }
 }
 

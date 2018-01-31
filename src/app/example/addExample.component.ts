@@ -25,9 +25,9 @@ export class addExampleComponent {
      }
      
      addNewExample(name, description){
-        this.exap.name= name;
-        this.exap.description = description
-        this.exampleService.postExample(this.exap);
+        this.exampleService.postExample(name, description).subscribe(data =>{
+            console.log(data);
+        });
      }
 }
 

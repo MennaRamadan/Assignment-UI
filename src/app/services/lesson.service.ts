@@ -13,13 +13,22 @@ export class LessonService{
         };
         
         
-        postLessons(name, descrition, details){
-            return this.http.post('http://127.0.0.1:3000/lesson').map((response:Response) => response.json());
+        postLessons(_name, _descrition, _details){
+            var data = {
+                name: _name,
+                descrition: _descrition,
+                details: _details
+            };
+            return this.http.post('http://127.0.0.1:3000/lesson', data).map((response:Response) => response.json());
         };
         
         
-        addLessonToLanguage(lessonId, languageId){
-          return this.http.put('http://127.0.0.1:3000/language/lesson/add').map((response:Response) => response.json());
+        addLessonToLanguage(_lessonId, _languageId){
+            var data = {
+                lessonId: _lessonId,
+                languageId : _languageId
+            };
+          return this.http.put('http://127.0.0.1:3000/language/lesson/add',data).map((response:Response) => response.json());
         };
         
         getLessonByLanguage(lessonId){

@@ -38,7 +38,9 @@ export class addLessonToLangComponent {
      }
      
      addLessonToLang(lessonId, languageId){
-        this.lessonService.addLessonToLanguage(lessonId, languageId);
+        this.lessonService.addLessonToLanguage(lessonId, languageId).subscribe(data =>{
+            console.log(data);
+        });
      }
 
 }

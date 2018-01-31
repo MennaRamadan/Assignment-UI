@@ -23,7 +23,9 @@ export class addLessonComponent {
      }
      
      addNewLesson(name, descrition, details){
-          this.lessonService.postLessons(name, descrition, details);
+          this.lessonService.postLessons(name, descrition, details).subscribe(data =>{
+            console.log(data);
+        });
      }
 
 }
