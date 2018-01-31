@@ -3,10 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Prerequisites
-    things you need to install the software and how to install them
-        -install node.js
-            1. download .exe file and install it
-            2. edit path of system variable to include node
+    -install node.js and edit path of system variable to include node
+
+## Installing
+    1. Run 'node' to make sure that node installed correctly.
+    2. Run 'npm install' from project file folder
 
 ## Development server
 
