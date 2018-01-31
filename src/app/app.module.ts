@@ -20,15 +20,22 @@ import {ExampleService} from './services/example.services';
 import {LangugesService} from './services/languages.service';
 import {LessonService} from './services/lesson.service';
 import {LoginService} from './services/login.service';
-import { AppRoutingModule } from './app-routing.module';
 import { RouterModule , Routes } from '@angular/router';
 
 const appRoutes : Routes = [
   { path: 'login', component:loginComponent },
   { path: 'language' , component:languageComponent },
+  { path: 'lesson' , component:lessonComponent },
+  { path: 'example' , component:exampleComponent },
+  { path: 'addLanguage' , component:addLanguageComponent },
+  { path: 'addExample' , component:addExampleComponent },
+  { path: 'addLesson' , component:addLessonComponent },
+  { path: 'listLesson' , component:listLessonComponent },
+  { path: 'listExample' , component:listExampleComponent },
+  { path: 'addLessonToLang' , component:addLessonToLangComponent },
+  { path: 'addExampleTo' , component:addExampleToLessonComponent },
   { path: '' ,redirectTo: '/login', pathMatch:'full' },
   { path: '**' ,redirectTo: '/login', pathMatch:'full' }
-  
 ];
 
 @NgModule({
