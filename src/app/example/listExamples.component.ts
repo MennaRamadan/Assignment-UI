@@ -22,13 +22,16 @@ export class listExampleComponent {
     constructor (private lessonService : LessonService){}
    
     ngOnInit(){
+            this.lessonService.getLessons().subscribe(data =>{
+               this.exaps  = data
+           });
      }
      
-     listAllExamples(){
-         this.lessonService.getLessons().subscribe(data =>{
-            this.exaps  = data
-        });
-     }
+    //  listAllExamples(){
+    //      this.lessonService.getLessons().subscribe(data =>{
+    //         this.exaps  = data
+    //     });
+    //  }
 
 }
 

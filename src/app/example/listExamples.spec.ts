@@ -13,7 +13,7 @@ describe('listExampleComponent', () => {
 
   it('should contain listAllExamples',
       inject([listExampleComponent], (service: listExampleComponent) => {
-         expect(service.listAllExamples).toBeTruthy(); 
+         expect(service.ngOnInit).toBeTruthy(); 
       }
   ));
 });

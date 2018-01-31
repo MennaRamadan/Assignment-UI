@@ -8,7 +8,7 @@ import {Exap} from '../models/example'
 
 @Component({
 	selector: 'list-lesson',
-	templateUrl: './lesson.component.html',
+	templateUrl: './listLessons.component.html',
     providers: [LessonService],
     styleUrls: ['./lesson.component.sass']
 })
@@ -21,13 +21,16 @@ export class listLessonComponent {
     constructor (private lessonService : LessonService){}
    
     ngOnInit(){
+            this.lessonService.getLessons().subscribe(data =>{
+               this.lessons = data
+           });
      }
      
-     listAllLessons(){
-         this.lessonService.getLessons().subscribe(data =>{
-            this.lessons = data
-        });
-     }
+    //  listAllLessons(){
+    //      this.lessonService.getLessons().subscribe(data =>{
+    //         this.lessons = data
+    //     });
+    //  }
 
 }
 

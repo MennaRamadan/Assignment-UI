@@ -13,7 +13,7 @@ describe('listLessonComponent', () => {
 
   it('should contain service inside init',
       inject([listLessonComponent], (service: listLessonComponent) => {
-         expect(service.listAllLessons).toBeTruthy(); 
+         expect(service.ngOnInit).toBeTruthy(); 
       }
   ));
 });
